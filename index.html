@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js">
+    </script>
+    <title>Skillstest</title>
+</head>
+<body>
+
+    <h1>Breakfast Diners</h1>
+
+<h2>Menu:</h2>
+<form>
+    <input type="checkbox" id="waffles" value="100"> Waffles (₱100)<br>
+    <input type="checkbox" id="pancakes" value="100"> Pancakes (₱100)<br>
+    <input type="checkbox" id="hashbrowns" value="60"> Hashbrowns (₱60)<br>
+    <input type="checkbox" id="chicken_waffles" value="280"> Chicken & Waffles (₱280)<br>
+    <input type="checkbox" id="orange_juice" value="60"> Orange Juice (₱60)<br>
+    <input type="checkbox" id="black_coffee" value="60"> Black Coffee (₱60)<br>
+
+    <h2>Customer Details:</h2>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <input type="text" id="address" placeholder="Enter your address"><br>
+    <input type="text" id="contact" placeholder="Enter your contact number"><br>
+
+    <button type="button" py-click="create_order">Create Order</button>
+</form>
+
+<h3>Order Summary:</h3>
+<div id="output"></div>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
